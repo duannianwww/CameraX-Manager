@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="common_primary_color">@color/white</color>
+    <color name="common_primary_dark_color">@color/transparent</color>
+    <color name="common_accent_color">#5A8DDF</color>
+    <color name="common_window_background_color">#F4F4F4</color>
+    <color name="common_text_color">#333333</color>
+    <color name="common_rank_text_color">#C1C8D0</color>
+    <color name="common_text_hint_color">@color/panda</color>
+    <color name="common_text_gray_color">#999999</color>
+    <color name="common_text_ori_color">#F85D2B</color>
+    <color name="common_text_yellow_color">#F2CB51</color>
+
+    <!-- 按钮按压时的颜色 -->
+    <color name="common_button_pressed_color">#AA5A8DDF</color>
+    <!-- 按钮禁用时的颜色 -->
+    <color name="common_button_disable_color">#BBBBBB</color>
+    <!-- 分割线的颜色 -->
+    <color name="common_line_color">#ECECEC</color>
+    <!-- 矢量图标的颜色 -->
+    <color name="common_icon_color">#7C7C7C</color>
+
+    <!-- 对话框确认按钮的文本颜色 -->
+    <color name="common_confirm_text_color">#007AFF</color>
+    <!-- 对话框取消按钮的文本颜色 -->
+    <color name="common_cancel_text_color">#F44336</color>
+
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+    <!-- 熊猫色（黑白背景通吃） -->
+    <color name="panda">#FF757575</color>
+
+    <!-- 白色 -->
+    <color name="white0">#00FFFFFF</color>
+    <color name="white95">#F2FFFFFF</color>
+    <color name="white90">#E6FFFFFF</color>
+    <color name="white85">#D9FFFFFF</color>
+    <color name="white80">#CCFFFFFF</color>
+    <color name="white75">#BFFFFFFF</color>
+    <color name="white70">#B3FFFFFF</color>
+    <color name="white65">#A6FFFFFF</color>
+    <color name="white60">#99FFFFFF</color>
+    <color name="white55">#8CFFFFFF</color>
+    <color name="white50">#80FFFFFF</color>
+    <color name="white45">#73FFFFFF</color>
+    <color name="white40">#66FFFFFF</color>
+    <color name="white35">#59FFFFFF</color>
+    <color name="white30">#4DFFFFFF</color>
+    <color name="white25">#40FFFFFF</color>
+    <color name="white20">#33FFFFFF</color>
+    <color name="white15">#26FFFFFF</color>
+    <color name="white10">#1AFFFFFF</color>
+    <color name="white5">#0DFFFFFF</color>
+
+    <!-- 黑色 -->
+    <color name="black0">#00000000</color>
+    <color name="black95">#F2000000</color>
+    <color name="black90">#E6000000</color>
+    <color name="black85">#D9000000</color>
+    <color name="black80">#CC000000</color>
+    <color name="black75">#B000000F</color>
+    <color name="black70">#B3000000</color>
+    <color name="black65">#A6000000</color>
+    <color name="black60">#99000000</color>
+    <color name="black55">#8C000000</color>
+    <color name="black50">#80000000</color>
+    <color name="black45">#73000000</color>
+    <color name="black40">#66000000</color>
+    <color name="black35">#59000000</color>
+    <color name="black30">#4D000000</color>
+    <color name="black25">#40000000</color>
+    <color name="black20">#33000000</color>
+    <color name="black15">#26000000</color>
+    <color name="black10">#1A000000</color>
+    <color name="black5">#0D000000</color>
+
+    <!-- 灰色 -->
+    <color name="gray">#FF808080</color>
+    <!-- 红色 -->
+    <color name="red">#FFFF0000</color>
+    <!-- 金色 -->
+    <color name="gold">#FFFFD700</color>
+    <!-- 黄色 -->
+    <color name="yellow">#FFFFFF00</color>
+    <!-- 绿色 -->
+    <color name="green">#FF008000</color>
+    <!-- 绿色 -->
+    <color name="light_green">#009C0F</color>
+    <!-- 蓝色 -->
+    <color name="blue">#FF0000FF</color>
+    <!-- 紫色 -->
+    <color name="purple">#FF800080</color>
+    <!-- 粉色 -->
+    <color name="pink">#FFFFC0CB</color>
+    <!-- 橙色 -->
+    <color name="orange">#FFFFA500</color>
+    <!-- 灰色-->
+    <color name="gary">#E5E5E5</color>
+    <color name="home_background">#F4F9FF</color>
+    <color name="btn_background">#4063FB</color>
+    <!-- 主要/标题 -->
+    <color name="common_title">#141518</color>
+    <!-- 点击色 -->
+    <color name="common_pressed">#237AD5</color>
+    <color name="cancel_color">#FB4040</color>
+    <color name="loading_progress_bottom_text_color">#237AD5</color>
+    <color name="main_tabview_color_select">#5660CC</color>
+    <color name="main_tabview_color_unselect">#D0D4DA</color>
+    <color name="banner_normal">#80FFFFFF</color>
+
+    <color name="c_989898">#989898</color>
+    <color name="c_4372FA">#4372FA</color>
+    <color name="c_4a86ff">#4A86FF</color>
+    <color name="c_29A0E4">#29A0E4</color>
+    <color name="c_5660CC">#5660CC</color>
+    <color name="c_fb7215">#FB7215</color>
+    <color name="c_2A9D6A">#2A9D6A</color>
+    <color name="c_FFD645">#FFD645</color>
+    <color name="c_FFAE17">#FFAE17</color>
+    <color name="c_FF7024">#FF7024</color>
+    <color name="c_09A99F">#F26C61</color>
+    <color name="c_F51A1A">#F51A1A</color>
+    <color name="progress_color">#3F51B5</color>
+    <color name="ext_shape_bg_primary">#AAF85D2B</color>
+    <color name="disable_color">#b7babc</color>
+    <color name="rank_recyclerview_bg">#0C0D18</color>
+    <color name="c_f853a6">#F853A6</color>
+    <color name="c_3d36b8">#3D36B8</color>
+    <color name="c_0155df">#ff0155df</color>
+    <color name="c_3372d5">#3372D5</color>
+</resources>

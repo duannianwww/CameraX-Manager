@@ -1,0 +1,160 @@
+
+//资源混淆
+
+apply plugin: "com.bytedance.android.aabResGuard"
+
+aabResGuard {
+    //mappingFile = file("mapping.txt").toPath() // 用于增量混淆的 mapping 文件
+    // If set, name column in arsc those need to proguard will be kept to this value
+    //fixedResName = "arg"
+    // It will merge the duplicated resources, but don't rely on this feature too much.
+    // it's always better to remove duplicated resource from repo
+//    mergeDuplicatedRes = true
+    whiteList = [
+            //Firebase Config崩溃，这个可以解决。影响字符串混淆。还是找出具体字符串
+//            "*.R.string.*",
+
+            // your icon
+            "*.R.drawable.ic_launcher*",
+            "*.R.mipmap.ic_launcher*",
+
+            //material
+            "*.R.string.material*",
+            "*.R.drawable.material*",
+            "*.R.layout.material*",
+            "*.R.id.material*",
+            "*.R.dimen.material*",
+            "*.R.style.material*",
+            "*.R.color.material*",
+
+            //google-services
+            "*.R.string.google_app_id",
+            "*.R.string.gcm_defaultSenderId",
+            "*.R.string.default_web_client_id",
+            "*.R.string.ga_trackingId",
+            "*.R.string.firebase_database_url",
+            "*.R.string.google_api_key",
+            "*.R.string.google_crash_reporting_api_key",
+            "*.R.string.com.google.firebase.crashlytics.*",
+            "*.R.string.project_id",
+
+            //Firebase Crashlytics
+            "*.R.bool.com.crashlytics.useFirebaseAppId",
+            "*.R.string.com.crashlytics.useFirebaseAppId",
+            "*.R.string.google_app_id",
+            "*.R.bool.com.crashlytics.CollectDeviceIdentifiers",
+            "*.R.string.com.crashlytics.CollectDeviceIdentifiers",
+            "*.R.bool.com.crashlytics.CollectUserIdentifiers",
+            "*.R.string.com.crashlytics.CollectUserIdentifiers",
+            "*.R.string.com.crashlytics.ApiEndpoint",
+            "*.R.string.io.fabric.android.build_id",
+            "*.R.string.com.crashlytics.android.build_id",
+            "*.R.bool.com.crashlytics.RequireBuildId",
+            "*.R.string.com.crashlytics.RequireBuildId",
+            "*.R.bool.com.crashlytics.CollectCustomLogs",
+            "*.R.string.com.crashlytics.CollectCustomLogs",
+            "*.R.bool.com.crashlytics.Trace",
+            "*.R.string.com.crashlytics.Trace",
+            "*.R.string.com.crashlytics.CollectCustomKeys",
+
+
+            //穿山甲广告SDK https://www.pangleglobal.com/publisher/integration
+            "*.R.string.tt_*",
+            "*.R.raw.tt_*",
+            "*.R.drawable.tt_*",
+            "*.R.mipmap.tt_*",
+            "*.R.id.tt_*",
+            "*.R.layout.tt_*",
+            "*.R.menu.tt_*",
+            "*.R.style.tt_*",
+            "*.R.attr.tt_*",
+            "*.R.dimen.tt_*",
+            "*.R.color.tt_*",
+            "*.R.anim.tt_*",
+            "*.R.integer.tt_*",
+
+            //MintegralSDK  https://dev.mintegral.com/doc/index.html?file=sdk-m_sdk-android&lang=cn
+            "*.R.string.mbridge*",
+            "*.R.drawable.mbridge*",
+            "*.R.layout.mbridge*",
+            "*.R.id.mbridge*",
+            "*.R.dimen.mbridge*",
+            "*.R.style.mbridge*",
+            "*.R.color.mbridge*",
+            "*.R.anim.mbridge*",
+
+            //Topon SDK https://docs.toponad.com/#/zh-cn/android/android_doc/android_sdk_config_non_cn_access
+            "*.R.string.anythink_*",
+            "*.R.drawable.anythink_*",
+            "*.R.layout.anythink_*",
+            "*.R.id.anythink_*",
+            "*.R.dimen.anythink_*",
+            "*.R.style.anythink_*",
+            "*.R.color.anythink_*",
+            "*.R.anim.anythink_*",
+
+            //applovin //没查到说明，加了保险
+            "*.R.string.applovin*",
+            "*.R.drawable.applovin*",
+            "*.R.layout.applovin*",
+            "*.R.id.applovin*",
+            "*.R.dimen.applovin*",
+            "*.R.style.applovin*",
+            "*.R.color.applovin*",
+            "*.R.anim.applovin*",
+
+            //facebook
+            "*.R.string.facebook*",
+            "*.R.drawable.facebook*",
+            "*.R.layout.facebook*",
+            "*.R.id.facebook*",
+            "*.R.dimen.facebook*",
+            "*.R.style.facebook*",
+            "*.R.color.facebook*",
+            "*.R.anim.facebook*",
+
+            //bigo
+            "*.R.string.bigo_*",
+            "*.R.drawable.bigo_*",
+            "*.R.layout.bigo_*",
+            "*.R.id.bigo_*",
+            "*.R.dimen.bigo_*",
+            "*.R.style.bigo_*",
+            "*.R.color.bigo_*",
+            "*.R.anim.bigo_*",
+
+            //yandex
+            "*.R.string.yandex_*",
+            "*.R.drawable.yandex_*",
+            "*.R.layout.yandex_*",
+            "*.R.id.yandex_*",
+            "*.R.dimen.yandex_*",
+            "*.R.style.yandex_*",
+            "*.R.color.yandex_*",
+            "*.R.anim.yandex_*",
+
+            //Mytarget
+            "*.R.string.nativeads_*",
+            "*.R.drawable.nativeads_*",
+            "*.R.layout.nativeads_*",
+            "*.R.id.nativeads_*",
+            "*.R.dimen.nativeads_*",
+            "*.R.style.nativeads_*",
+            "*.R.color.nativeads_*",
+            "*.R.anim.nativeads_*",
+    ]
+
+    obfuscatedBundleFileName = "bluelightfilter.aab" // 混淆后的文件名称，必须以 `.aab` 结尾
+    mergeDuplicatedRes = true // 是否允许去除重复资源
+    enableFilterFiles = true // 是否允许过滤文件，不能设置为true，会造成lib目录被删除
+    filterList = [  // 文件过滤规则
+                    "BUNDLE-METADATA/**/proguard.map",
+                    "BUNDLE-METADATA/**/app-metadata.properties",
+//                   "BUNDLE-METADATA/**/dependencies.pb",
+                    "BUNDLE-METADATA/**/baseline.prof"
+    ]
+    enableFilterStrings = false // 过滤文案
+    unusedStringPath = file("unused.txt").toPath() // 过滤文案列表路径 默认在mapping同目录查找
+    languageWhiteList = ["en", "ar","de","es","hi","in","it","ja","ko","ms","pt","th","tl","tr","vi", "zh-rCN", "zh-rTW","ru"] // 保留en,en-xx,zh,zh-xx等语言，其余均删除
+
+}
